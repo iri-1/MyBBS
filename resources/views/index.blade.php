@@ -3,7 +3,7 @@
         My BBS
     </x-slot>
     <h1>
-       <span> My BBS </span>
+       <span> My BBS (new)</span>
         <a href=" {{route('posts.create') }}">[Add]</a>
     </h1>
 
