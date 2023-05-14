@@ -7,11 +7,11 @@
         {{-- &laquo; <a href="/">Back</a> --}}
 
         {{-- 以下も同じ意味ですが、ページの別名を使っています "/"を>name('posts.index') --}}
-        &laquo; <a href="{{ route('posts.show' ,$post) }}">Back</a>
+     <a class="btn-success btn-lg h-auto" href="{{ route('posts.show' ,$post) }}">Back</a>
 
         </div>
         {{-- ページに表示されるのは＄pots[i]の格納されている文字列 --}}
-        <h1>Edit Post</h1>
+        <h1>投稿修正</h1>
         <form method="post" action="{{ route('posts.update',$post)}}">
             @method('PATCH')
             @csrf
@@ -37,7 +37,7 @@
             </div>
 
             <div class="form-button">
-                <button>Update</button>
+                <button class="btn-success btn-lg h-auto">更新</button>
             </div>
 
         </form>

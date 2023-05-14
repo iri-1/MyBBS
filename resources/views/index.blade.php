@@ -3,8 +3,8 @@
         My BBS
     </x-slot>
     <h1>
-       <span> My BBS (new)</span>
-        <a href=" {{route('posts.create') }}">[Add]</a>
+       <span class="text-dark"> My BBS </span>
+        <a class="btn-success btn-lg h-auto" href=" {{route('posts.create') }}">[投稿]</a>
     </h1>
 
     <ul>
